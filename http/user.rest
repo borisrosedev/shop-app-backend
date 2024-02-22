@@ -1,0 +1,32 @@
+@host=http://localhost:3000/
+@prefix=api/users
+
+@idBoris=65d669ca9ba43a6d1910846d"
+@idCaroline=65d6808e8627370ed9ef88be
+
+# @name PostRequest
+POST {{host}}{{prefix}}
+Content-Type: application/json
+
+{
+    "email":"caroline@gmail.com",
+    "password":"alexandre"
+}
+
+
+### 
+# @name GetRequest
+GET {{host}}{{prefix}}
+
+###
+POST {{host}}api/products
+Content-Type: application/json
+
+{
+    "title":"La Rose",
+    "url":"https://cdn.pixabay.com/photo/2024/02/08/08/28/rose-8560544_1280.jpg",
+    "description":"Une rose inoubliable",
+    "ownerId":"{{idCaroline}}",
+    "price":2000.50
+}
+

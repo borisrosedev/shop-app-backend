@@ -1,0 +1,24 @@
+@host=http://localhost:3000/
+@prefix=api/products
+
+@idBoris=65d669ca9ba43a6d1910846d
+@idCaroline=65d6808e8627370ed9ef88be
+
+
+
+### 
+# @name GetRequest
+GET {{host}}{{prefix}}
+
+###
+POST {{host}}{{prefix}}
+Content-Type: application/json
+
+{
+    "title":"La Rose des Indes",
+    "url":"https://cdn.pixabay.com/photo/2023/08/01/16/51/flower-8163377_1280.jpg",
+    "description":"Elle était si marron, que mes yeux se perdaient dans son bois si charmant",
+    "ownerId":"{{idBoris}}",
+    "price":1000.50
+}
+
